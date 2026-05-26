@@ -1,0 +1,2 @@
+index=botsv2 sourcetype="stream:http" http_user_agent="*NaenaraBrowser*"
+| stats count, values(site) as target_site by src_ip, dest_ip
