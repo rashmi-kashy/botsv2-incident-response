@@ -1,0 +1,4 @@
+index=botsv2 sourcetype="stream:http" src_ip="10.0.2.101" 
+NOT (site=*.microsoft.com OR site=*.gvt1.com OR site=*msn.com OR site=*.bing.com) 
+| stats count by site 
+| sort - count
