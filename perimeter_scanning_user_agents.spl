@@ -1,0 +1,3 @@
+index=botsv2 sourcetype="stream:http" site="www.froth.ly" 
+| stats count by http_user_agent 
+| sort + count
