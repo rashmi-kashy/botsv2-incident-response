@@ -5,7 +5,9 @@ Objective: Investigate suspicious employee activity.
 
 Evidence Uncovered: Targeted reconnaissance against a competitor (www.berkbeer.com) and exfiltration of corporate leadership data via an image asset (/images/ceoberk.png).
 
-The SPL: Include your exact index=botsv2 sourcetype="stream:http" src_ip="10.0.2.101" query to prove your work.
+The SPL: index=botsv2 sourcetype="stream:http" http_user_agent="*NaenaraBrowser*"
+| stats count, values(site) as target_site by src_ip, dest_ip
+
 Phase 2: External Reconnaissance & Perimeter Attack
 Objective: Identify malicious scanning on the public web server (www.froth.ly).
 
