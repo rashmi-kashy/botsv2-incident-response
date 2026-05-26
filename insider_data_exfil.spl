@@ -1,0 +1,3 @@
+index=botsv2 src_ip="10.0.2.101" sourcetype="stream:http" site="www.berkbeer.com"
+| table _time, uri_path, uri
+| dedup uri_path
