@@ -11,4 +11,4 @@ Objective: Identify malicious scanning on the public web server (www.froth.ly).
 
 Evidence Uncovered: A spoofed/exotic User-Agent string revealing a state-backed signature (NaenaraBrowser/3.5b4) originating from a masked ExpressVPN node (85.203.47.86), actively targeting the internal corporate web server (172.31.6.251).
 
-The SPL: Paste your stats count by http_user_agent | sort + count logic.
+
